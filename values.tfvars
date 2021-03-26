@@ -44,7 +44,7 @@ ec2_tags    = { Name = "web_server"}
 
 most_recent_bool = "true"
 ami_tag_type     = "name"
-ami_value        = ["ansible*"]
+ami_value        = ["ans*"]
 ami_owner        = ["amazon"]
 
 
