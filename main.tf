@@ -53,7 +53,9 @@ module "my_ec2" {
   vpc_security_group_ids = [ module.my_sg.this_security_group_id ]
   subnet_id              = element(module.my_vpc.public_subnets, 0)
   user_data              = file("userdata.sh")
-  tags                   = element(var.ec2_tags, count.index)  
+  tags = {
+    Name  = "${element(var.ec2_tags, count.index)}"    
+  }
 }
 
 data "aws_ami" "my_ami" {
