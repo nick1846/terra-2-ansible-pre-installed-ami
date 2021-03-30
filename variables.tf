@@ -82,18 +82,18 @@ variable "sg_egress_cidr" {
 variable "sg_egress_rules" {  
 }
 
-#my-ec2-variables
+#my-ec2-dev-cluster-variables
 
-variable "my_ec2_name" {
+variable "dev_cluster_name" {
 }
 
-variable "ec2_count" {  
+variable "ec2_count_dev" {  
 }
 
-variable "ec2_type" {  
+variable "ec2_type_dev" {  
 }
 
-variable "ec2_tags" {  
+variable "ec2_tags_dev" {  
 }
 
 #my-data-ami
