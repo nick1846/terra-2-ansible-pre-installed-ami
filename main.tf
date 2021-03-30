@@ -12,7 +12,7 @@ resource "aws_key_pair" "ec2-user-public" {
 resource "aws_eip" "for_each" {
   count    = var.eip_count
   vpc      = var.vpc_bool
-  instance = element(module.my_ec2.id, count.index)  
+  instance = element(module.my_ec2_dev_cluster.id, count.index)  
 }
 
 module "my_vpc" {
